@@ -11,20 +11,19 @@ h1 {
     padding: 0;
 }
 
+
 .main-container {
     width: 35%;
     height: 100vh;
     background-image: url(imgs/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
 }
 
 .odin {
     background-color: rgba(0, 0, 0, 0.315);
     padding: 10px;
-    position: relative;
-    top: 20%;
+    margin-top: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,12 +39,96 @@ h1 {
     width: 90px;
 }
 
-.odin footer {
-    position: absolute;
-    top: 73vh;
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 55vh;
 }
 
-.odin footer a {
+footer a,
+p {
     color: white;
     text-decoration: none;
+}
+
+body {
+    display: flex;
+}
+
+.main {
+    margin-top: 20vh;
+    margin-left: 5vw;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main h1 {
+    font-size: 1.5rem;
+}
+
+.main h2 {
+    font-size: 1.25rem;
+}
+
+.main .sign-up {
+    --margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    color: rgba(0, 0, 0, 0.774);
+}
+
+.main .sign-up .form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .sign-up input {
+    border: 1px gray solid;
+    border-radius: 5px;
+}
+
+.main .sign-up input:focus {
+    border: 1px rgb(41, 26, 252) solid;
+    outline: 1px rgb(41, 26, 252);
+    box-shadow: 2px 2px 11px 0px #00000054;
+    border-radius: 5px;
+}
+
+.main .sign-up input:focus:invalid {
+    border: 1px rgb(252, 26, 26) solid;
+    outline: 1px rgb(252, 26, 26);
+    box-shadow: 2px 2px 11px 0px #00000054;
+    border-radius: 5px;
+}
+
+.main .sign-up button {
+    margin-top: 50px;
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(89, 109, 72);
+    color: white;
+    box-shadow: 2px 2px 11px 0px #00000054;
+}
+
+.main .sign-up button:hover {
+    cursor: pointer;
+}
+
+.main .sign-up .first-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .sign-up .second-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .sign-up .email,
+.main .sign-up .conpassword,
+.main .sign-up .password,
+.main .sign-up .tel {
+    margin-top: var(--margin-top);
 }
