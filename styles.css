@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "norse";
+    src:
+        url("fonts/norse-bold-webfont.woff2") format("woff2"),
+        url("fonts/norse-bold-webfont.woff") format("woff");
+}
+
+body,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    width: 35%;
+    height: 100vh;
+    background-image: url(imgs/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.odin {
+    background-color: rgba(0, 0, 0, 0.315);
+    padding: 10px;
+    position: relative;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.odin h1 {
+    font-family: "norse";
+    font-size: 5rem;
+    color: white;
+}
+
+.odin img {
+    width: 90px;
+}
+
+.odin footer {
+    position: absolute;
+    top: 73vh;
+}
+
+.odin footer a {
+    color: white;
+    text-decoration: none;
+}
