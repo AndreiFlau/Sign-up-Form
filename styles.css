@@ -14,7 +14,6 @@ h1 {
 
 .main-container {
     width: 35%;
-    height: 100vh;
     background-image: url(imgs/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -42,13 +41,12 @@ h1 {
 footer {
     display: flex;
     justify-content: center;
-    margin-top: 55vh;
+    margin-top: 58.3vh;
 }
 
 footer a,
 p {
     color: white;
-    text-decoration: none;
 }
 
 body {
@@ -59,6 +57,15 @@ body {
     margin-top: 20vh;
     margin-left: 5vw;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main p {
+    color: black;
+}
+
+.main a {
+    color: rgb(89, 109, 72);
+    font-weight: bold;
 }
 
 .main h1 {
@@ -75,11 +82,13 @@ body {
     flex-direction: column;
     margin-top: 10vh;
     color: rgba(0, 0, 0, 0.774);
+    position: relative;
 }
 
 .main .sign-up .form {
     display: flex;
     justify-content: space-between;
+    margin-left: -15px;
 }
 
 .main .sign-up input {
@@ -116,9 +125,29 @@ body {
     cursor: pointer;
 }
 
+.main .sign-up fieldset {
+    border: none;
+}
+
 .main .sign-up .first-column {
     display: flex;
     flex-direction: column;
+}
+
+
+.main .sign-up .errormes::after {
+    content: "⚠️ Passwords do not match";
+    margin-top: 10px;
+    color: red;
+    position: absolute;
+    top: 230px;
+}
+
+.main .sign-up .errormesp {
+    border: 1px rgb(252, 26, 26) solid;
+    outline: 1px rgb(252, 26, 26);
+    box-shadow: 2px 2px 11px 0px #00000054;
+    border-radius: 5px;
 }
 
 .main .sign-up .second-column {

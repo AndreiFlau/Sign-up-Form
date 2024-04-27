@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <script src="script.js" defer></script>
     <div class="main-container">
         <div class="odin">
             <img src="imgs/odin-lined.png" alt="odin logo">
@@ -26,24 +27,25 @@
             <h2>Let's do this!</h2>
             <form action="" method="get">
                 <div class="form">
-                    <div class="first-column">
+                    <fieldset class="first-column">
                         <label for="firstname">First Name</label>
-                        <input type="text" id="firstname" name="firstname" required>
-                        <label for="firstname" class="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="firstname" class="password">Password</label>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-                    <div class="second-column">
-                        <label for="firstname">Second Name</label>
-                        <input type="text" id="secondname" name="secondname" required>
-                        <label for="firstname" class="tel">Phone Number</label>
-                        <input type="tel" id="tel" name="tel" required>
-                        <label for="firstname" class="conpassword">Confirm your password</label>
-                        <input type="password" id="conpassword" name="conpassword" required>
-                    </div>
+                        <input type="text" id="firstname" name="firstname" class="item" required>
+                        <label for="email" class="email">Email</label>
+                        <input type="email" id="email" name="email" class="item" required>
+                        <label for="password" class="password">Password</label>
+                        <input type="password" id="password" name="password" class="item" required>
+                    </fieldset>
+                    <fieldset class="second-column">
+                        <label for="secondname">Second Name</label>
+                        <input type="text" id="secondname" name="secondname" class="item" required>
+                        <label for="tel" class="tel">Phone Number</label>
+                        <input type="tel" id="tel" name="tel" class="item" required>
+                        <label for="conpassword" class="conpassword">Confirm your password</label>
+                        <input type="password" id="conpassword" name="conpassword" class="item" required>
+                    </fieldset>
                 </div>
-                <button>Create Account</button>
+                <button id="confirmbtn">Create Account</button>
+                <p>Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Log in</a></p>
             </form>
         </div>
     </div>
